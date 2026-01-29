@@ -253,7 +253,7 @@ This project explores the design of an end-to-end MLOps workflow, covering model
 - 2025-11-10 — [Today I Learned: Consistent naming across stack layers improves maintainability](til/2025/11/2025-11-10-consistent-naming.md)
 - 2025-11-04 — [TIL: Speeding up Shiny apps with smarter reactive design](til/2025/11/2025-11-04-shiny-performance-tips.md)
 
-_Last updated: 2026-01-28 07:40 UTC_
+_Last updated: 2026-01-29 07:54 UTC_
 <!-- END:INDEX -->
 
 ## About me
