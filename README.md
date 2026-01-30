@@ -340,6 +340,7 @@ This project explores the design of an end-to-end MLOps workflow, covering model
 
 <!-- START:INDEX -->
 ## Case studies
+- 2026-02-10 — [Redesigning an Application in Production: _Instalometro na Conectividade na Saúde_](notes/case-studies/2026-02-10_redesign_application_in_production.md)
 - 2026-01-05 — [Case Study: School Detection from Satellite Imagery](notes/case-studies/2026-01-05-school_detection_from_satellite_imagery.md)
 - 2025-12-17 — [How I build data-driven presentations with Quarto + revealjs (a real-world example)](notes/case-studies/2025-12-17-nota_estilo_apresentacoes_quarto_revealjs.md)
 - 2025-11-20 — [Case Study: Benchmarking Shiny app performance across environments with `shinyloadtest`](notes/case-studies/2025-11-20-shinyloadtest-performance-comparison.md)
@@ -349,6 +350,9 @@ This project explores the design of an end-to-end MLOps workflow, covering model
 - 2025-08-14 — [Modularizing a Large Shiny App (R)](notes/case-studies/2025-08-14-modularizing-large-shiny-app.md)
 
 ## TIL: Latest Lessons
+- 2026-02-05 — [🧠 TIL: Where to Run Data Operations (PostgreSQL vs R engines like DuckDB/Polars)](til/2026/02/2026-02-05_operations_where_to_do.md)
+- 2026-01-25 — [🧠 TIL: Migrating to Docker Buildx with Registry Cache (and Why It’s Worth Showing)](til/2026/01/2026-01-25_using_buildx_docker.md)
+- 2026-01-23 — [🧠 TIL: Making {renv} Work in a Multi-Stage Docker Build (Builder → Runtime)](til/2026/01/2026-01-23_using_renv_in_multi-stage_docker.md)
 - 2026-01-19 — [🧠 TIL: Shrinking Docker Images with Multi-Stage Builds (Builder + Runtime)](til/2026/01/2026-01-19_splitting_up_docker_image.md)
 - 2026-01-15 — [TIL: Using `ellmer`, `gander`, `chores`, and `ensure` to Draft R Docs + Tests with an Ollama Connection](til/2026/01/2026-01-15_R_docs_with_ellmer_ensure_gande_chores.md)
 - 2026-01-09 — [TIL: Learning Window Functions in PostgreSQL (with Practical Examples)](til/2026/01/2026-01-09_postgresql_window_functions.md)
@@ -358,11 +362,8 @@ This project explores the design of an end-to-end MLOps workflow, covering model
 - 2025-12-30 — [🧠 TIL: Getting Docker Image Tags Right in a Company Harbor Registry](til/2025/12/2025-12-30_tagging_docker_production_images.md)
 - 2025-12-12 — [Configuring Rate Limiting and IP Restriction in Kong Ingress](til/2025/12/2025-12-12-kong-plugins.md)
 - 2025-12-04 — [🧠 Building Machine Learning workflows in R with {tidymodels}](til/2025/12/2025-12-04_tidymodels_workflow.md)
-- 2025-11-19 — [TIL: Embedding Shiny elements inside Quarto Dashboards](til/2025/11/2025-11-19-quarto-dashboards-with-shiny.md)
-- 2025-11-10 — [Today I Learned: Consistent naming across stack layers improves maintainability](til/2025/11/2025-11-10-consistent-naming.md)
-- 2025-11-04 — [TIL: Speeding up Shiny apps with smarter reactive design](til/2025/11/2025-11-04-shiny-performance-tips.md)
 
-_Last updated: 2026-01-30 07:53 UTC_
+_Last updated: 2026-01-30 10:22 UTC_
 <!-- END:INDEX -->
 
 ## About me
