@@ -24,22 +24,131 @@ Each entry includes technical explanations, code snippets, results, and lessons 
 
 These projects represent my most relevant work as an applied Data Scientist, with a focus on **production systems**, **reproducible analytics**, and **decision support**.
 
+<!-- 1. **Redesigning an Application in Production: _Instalometro na Conectividade na Saúde_**
+Designing, hardening, and shipping a production-ready data application with a focus on performance, reproducibility, and maintainability. -->
+
 1. **Modularizing a Large Shiny Application (OBIA)**  
 Refactoring and hardening a national-scale analytics application, reducing code size by ~41% and introducing CI/CD, testing, and reproducibility.
 
-2. **Leveling Up an Internal R Package for Team-Scale Use**  
+1. **Leveling Up an Internal R Package for Team-Scale Use**  
 Productionizing an internal analytics package with versioned releases, CI/CD pipelines, and reproducible environments.
 
-3. **Shiny Application – IT Governance (MGI)**  
+1. **Shiny Application – IT Governance (MGI)**  
 End-to-end development and deployment of a public-facing Shiny application to assess IT governance across national entities.
 
-4. **Network Technology Analysis & Visualization**  
+1. **Network Technology Analysis & Visualization**  
 Statistical analysis and visual storytelling to support technical and policy-oriented decision-making.
 
-5. **End-to-End MLOps Pipeline**  
+1. **End-to-End MLOps Pipeline**  
 Implementation of a production-like ML lifecycle with experiment tracking and data/model versioning.
 
 ## Detailed Projects
+<!-- 
+<details>
+
+<summary><h3>⬇️ **Redesigning an Application in Production: _Instalometro na Conectividade na Saúde_**</h3></summary>
+Designing, hardening, and shipping a production-ready data application with a focus on performance, reproducibility, and maintainability.
+
+---
+
+### Overview
+
+**Instalometro** (inside the project _Conectividade na Saúde_) was an established application monitoring connection data of health institutions. However, over time, functionality slowed down as data volume, usage expectations, and operational requirements increased, the original setup revealed clear limitations in performance, scalability, and reproducibility.
+
+This project documents the transition from a working prototype to a **production-grade data application**, emphasizing architectural decisions, data engineering practices, and infrastructure reliability rather than feature growth.
+
+The goal was to deliver a **maintainable, performant, and deployable system** that could be confidently operated and handed over to a broader team.
+
+---
+
+### Key Challenges
+
+* Large datasets causing slow startup times and high memory usage
+* JSON-based APIs creating heavy payloads and long response times
+* Unclear separation between data access and reactive application logic
+* Fragile dependency restoration at runtime
+* Slow and unreliable CI builds with compiled dependencies
+* Need for measurable performance guarantees before production release
+
+---
+
+### Key Contributions
+
+* Re-architected data access using **Parquet-based pipelines** instead of large JSON payloads
+* Introduced **Polars with lazy evaluation** for scalable, on-demand data loading
+* Clearly separated data engineering concerns from Shiny reactive logic
+* Implemented **load testing with `shinyloadtest`** to validate performance under concurrent usage
+* Designed deterministic, multi-stage Docker builds using `{renv}` for reproducible environments
+* Migrated CI pipelines to **Docker Buildx with registry-backed cache** for faster, more reliable builds
+* Verified CI/CD workflows and documented clean handover instructions for the team
+
+---
+
+### Tech Stack
+
+**Languages**
+
+* R
+
+**Frameworks & Libraries**
+
+* Shiny
+* Polars
+* Arrow
+* DBI / dbplyr
+
+**Data & Storage**
+
+* PostgreSQL / PostGIS
+* Parquet
+
+**Testing & Validation**
+
+* shinyloadtest
+
+**Reproducibility**
+
+* renv
+
+**CI/CD & Infrastructure**
+
+* GitLab CI
+* Docker (multi-stage builds)
+* Docker Buildx (registry-backed cache)
+* Kubernetes
+
+---
+
+### Results & Impact
+
+* Significantly reduced application startup time and memory footprint
+* Improved scalability and predictability under multi-user load
+* Reduced API payload sizes by an order of magnitude through Parquet exports
+* Deterministic, reproducible builds independent of runtime package restoration
+* Faster and more reliable CI pipelines
+* Clear documentation enabling smooth handover and future maintenance
+
+Most importantly, **Instalometro na Conectividade na Saúde developed into an optimized data product** ready for long-term operation.
+
+---
+
+### Notes
+
+This project prioritized **architectural correctness and operational stability** over rapid feature expansion.
+
+Many performance issues were solved not through micro-optimizations, but through better placement of responsibilities between databases, data pipelines, and the Shiny application layer.
+
+Several of the patterns developed here have since informed reusable tooling and shared infrastructure.
+
+---
+
+🔎 Detailed walkthrough:
+[Case study — Redesignin an Application in Production](notes/case-studies/2026-02-10_redesign_application_in_production.md)
+
+
+🔗 **Live application:** [https://conectividadenasaude.nic.br](https://conectividadenasaude.nic.br)
+
+</details> -->
 
 <details>
 
