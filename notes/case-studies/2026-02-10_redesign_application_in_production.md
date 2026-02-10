@@ -162,6 +162,10 @@ Performance was no longer anecdotal -- it was measured.
 
 Most importantly, the app transitioned to a **maintainable data product**.
 
+![Example walkthrough](../../assets/time_per_user_session.png)
+
+![Overview of slowest processes (in same walkthrough)](../../assets/slowest_processes.png)
+
 ---
 
 ## Takeaways
