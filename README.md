@@ -350,7 +350,7 @@ This project explores the design of an end-to-end MLOps workflow, covering model
 - 2025-08-14 — [Modularizing a Large Shiny App (R)](notes/case-studies/2025-08-14-modularizing-large-shiny-app.md)
 
 ## TIL: Latest Lessons
-- 2026-02-28 — [Refactoring a 200-Line SQL Query: Less CTEs, Fewer Scans](til/2026/02/2026-02-28-sql-optimization.md)
+- 2026-02-28 — [TIL Refactoring a 200-Line SQL Query: Less CTEs, Fewer Scans](til/2026/02/2026-02-28-sql-optimization.md)
 - 2026-02-24 — [TIL: Scaling OSM-Based Weak Label Generation for Semantic Segmentation](til/2026/02/2026-02-24_scaling_osm_based_weak_label.md)
 - 2026-02-20 — [🧠 TIL: Speeding Up a Plumber API by Switching from JSON to Parquet](til/2026/02/2026-02-20_speeding_up_api.md)
 - 2026-02-05 — [🧠 TIL: Where to Run Data Operations (PostgreSQL vs R engines like DuckDB/Polars)](til/2026/02/2026-02-05_operations_where_to_do.md)
@@ -363,7 +363,7 @@ This project explores the design of an end-to-end MLOps workflow, covering model
 - 2026-01-05 — [TIL: OpenStreetMap is powerful weak supervision—but it teaches what is *mapped*, not what *exists*](til/2026/01/2026-01-05-osm_weak_supervision.md)
 - 2026-01-05 — [TIL: Point labels are often better suited for *site detection* than for segmentation](til/2026/01/2026-01-05-point_labels_site_detection.md)
 
-_Last updated: 2026-03-04 13:53 UTC_
+_Last updated: 2026-03-04 13:55 UTC_
 <!-- END:INDEX -->
 
 ## About me
