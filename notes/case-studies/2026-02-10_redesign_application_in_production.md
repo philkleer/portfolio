@@ -175,14 +175,8 @@ Most importantly, the app transitioned to a **maintainable data product**.
 - Shiny apps benefit enormously from data engineering discipline
 - Deterministic builds are a feature, not a luxury
 
----
+## Link
 
-## What We’d Do Next
+[Singular App](https://conectividadenasaude.nic.br/saudeinstalada/)
 
-- Expand automated performance regression tests
-- Continue pushing reusable patterns into shared tooling (`nicverso`)
-
----
-
-*This case study reflects real constraints and trade-offs encountered while shipping a production-ready Shiny application.*
-
+[Tab Instalações on the project page](https://conectividadenasaude.nic.br/)
