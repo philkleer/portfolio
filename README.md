@@ -24,8 +24,8 @@ Each entry includes technical explanations, code snippets, results, and lessons 
 
 These projects represent my most relevant work as an applied Data Scientist, with a focus on **production systems**, **reproducible analytics**, and **decision support**.
 
-<!-- 1. **Redesigning an Application in Production: _Instalometro na Conectividade na Saúde_**
-Designing, hardening, and shipping a production-ready data application with a focus on performance, reproducibility, and maintainability. -->
+1. **Redesigning an Application in Production: _Instalometro na Conectividade na Saúde_**
+Designing, hardening, and shipping a production-ready data application with a focus on performance, reproducibility, and maintainability.
 
 1. **Modularizing a Large Shiny Application (OBIA)**  
 Refactoring and hardening a national-scale analytics application, reducing code size by ~41% and introducing CI/CD, testing, and reproducibility.
@@ -43,7 +43,7 @@ Statistical analysis and visual storytelling to support technical and policy-ori
 Implementation of a production-like ML lifecycle with experiment tracking and data/model versioning.
 
 ## Detailed Projects
-<!-- 
+
 <details>
 
 <summary><h3>⬇️ **Redesigning an Application in Production: _Instalometro na Conectividade na Saúde_**</h3></summary>
@@ -146,9 +146,9 @@ Several of the patterns developed here have since informed reusable tooling and 
 [Case study — Redesignin an Application in Production](notes/case-studies/2026-02-10_redesign_application_in_production.md)
 
 
-🔗 **Live application:** [https://conectividadenasaude.nic.br](https://conectividadenasaude.nic.br)
+🔗 **Live application:** [https://conectividadenasaude.nic.br](https://conectividadenasaude.nic.br/saudeinstalada/)
 
-</details> -->
+</details>
 
 <details>
 
