@@ -1,4 +1,4 @@
-# Refactoring a 200-Line SQL Query: Less CTEs, Fewer Scans
+# TIL Refactoring a 200-Line SQL Query: Less CTEs, Fewer Scans
 _Date: 2026-02-28_
 
 While reviewing a colleague's query recently, I found a great real-world example of a query that *looks* well-structured — and partially is — but hides several silent performance killers. Here's what I learned.
