@@ -350,20 +350,20 @@ This project explores the design of an end-to-end MLOps workflow, covering model
 - 2025-08-14 — [Modularizing a Large Shiny App (R)](notes/case-studies/2025-08-14-modularizing-large-shiny-app.md)
 
 ## TIL: Latest Lessons
+- 2026-03-11 — [TIL: A Practical Workflow for Finding a Production-Ready Binary Classifier](til/2026/03/2026-03-11-workflow_choosing_model.md)
+- 2026-03-04 — [TIL: Using Overture Maps instead of raw OSM for scalable network analysis](til/2026/03/2026-03-04-using-overturemaps.md)
 - 2026-02-28 — [TIL Refactoring a 200-Line SQL Query: Less CTEs, Fewer Scans](til/2026/02/2026-02-28-sql-optimization.md)
 - 2026-02-24 — [TIL: Scaling OSM-Based Weak Label Generation for Semantic Segmentation](til/2026/02/2026-02-24_scaling_osm_based_weak_label.md)
-- 2026-02-20 — [🧠 TIL: Speeding Up a Plumber API by Switching from JSON to Parquet](til/2026/02/2026-02-20_speeding_up_api.md)
-- 2026-02-05 — [🧠 TIL: Where to Run Data Operations (PostgreSQL vs R engines like DuckDB/Polars)](til/2026/02/2026-02-05_operations_where_to_do.md)
-- 2026-01-25 — [🧠 TIL: Migrating to Docker Buildx with Registry Cache (and Why It’s Worth Showing)](til/2026/01/2026-01-25_using_buildx_docker.md)
-- 2026-01-23 — [🧠 TIL: Making {renv} Work in a Multi-Stage Docker Build (Builder → Runtime)](til/2026/01/2026-01-23_using_renv_in_multi-stage_docker.md)
-- 2026-01-19 — [🧠 TIL: Shrinking Docker Images with Multi-Stage Builds (Builder + Runtime)](til/2026/01/2026-01-19_splitting_up_docker_image.md)
+- 2026-02-20 — [TIL: Speeding Up a Plumber API by Switching from JSON to Parquet](til/2026/02/2026-02-20_speeding_up_api.md)
+- 2026-02-05 — [TIL: Where to Run Data Operations (PostgreSQL vs R engines like DuckDB/Polars)](til/2026/02/2026-02-05_operations_where_to_do.md)
+- 2026-01-25 — [TIL: Migrating to Docker Buildx with Registry Cache (and Why It’s Worth Showing)](til/2026/01/2026-01-25_using_buildx_docker.md)
+- 2026-01-23 — [TIL: Making {renv} Work in a Multi-Stage Docker Build (Builder → Runtime)](til/2026/01/2026-01-23_using_renv_in_multi-stage_docker.md)
+- 2026-01-19 — [TIL: Shrinking Docker Images with Multi-Stage Builds (Builder + Runtime)](til/2026/01/2026-01-19_splitting_up_docker_image.md)
 - 2026-01-15 — [TIL: Using `ellmer`, `gander`, `chores`, and `ensure` to Draft R Docs + Tests with an Ollama Connection](til/2026/01/2026-01-15_R_docs_with_ellmer_ensure_gande_chores.md)
 - 2026-01-09 — [TIL: Learning Window Functions in PostgreSQL (with Practical Examples)](til/2026/01/2026-01-09_postgresql_window_functions.md)
 - 2026-01-05 — [TIL: Geographic train/test splits are essential for honest geospatial ML evaluation](til/2026/01/2026-01-05_geo_train_test_split.md)
-- 2026-01-05 — [TIL: OpenStreetMap is powerful weak supervision—but it teaches what is *mapped*, not what *exists*](til/2026/01/2026-01-05-osm_weak_supervision.md)
-- 2026-01-05 — [TIL: Point labels are often better suited for *site detection* than for segmentation](til/2026/01/2026-01-05-point_labels_site_detection.md)
 
-_Last updated: 2026-03-18 07:59 UTC_
+_Last updated: 2026-03-18 18:24 UTC_
 <!-- END:INDEX -->
 
 ## About me
