@@ -1,4 +1,4 @@
-# 🧠 TIL: Migrating to Docker Buildx with Registry Cache (and Why It’s Worth Showing)
+# TIL: Migrating to Docker Buildx with Registry Cache (and Why It’s Worth Showing)
 
 _Date: 2026-01-25_
 

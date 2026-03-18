@@ -1,4 +1,4 @@
-# 🧠 TIL: Shrinking Docker Images with Multi-Stage Builds (Builder + Runtime)
+# TIL: Shrinking Docker Images with Multi-Stage Builds (Builder + Runtime)
 _Date: 2026-01-19_
 
 Over the past few days I built a Docker image that initially became **way too large**.  

@@ -1,4 +1,4 @@
-# 🧠 Building Machine Learning workflows in R with {tidymodels}
+# TIL: Building Machine Learning workflows in R with {tidymodels}
 _Date: 2025-12-04_
 
 I'm more trained in conducting ML algorithms in Python than in R, however, in my new time the main language is R. Hence, I started to get to know to `tidymodels` and learned how to create a **complete, scalable Machine Learning workflow** in R using the **{tidymodels}** ecosystem — including `{recipes}`, `{workflows}`, `{tune}`, and `{workflowsets}`.

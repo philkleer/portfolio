@@ -1,4 +1,4 @@
-# Configuring Rate Limiting and IP Restriction in Kong Ingress
+# TIL: Configuring Rate Limiting and IP Restriction in Kong Ingress
 _Date: 2025-12-12_
 
 Today I learned how to configure **Kong plugins** in a clean and modular way using `KongPlugin` in conjunction with `Ingress` on Kubernetes.

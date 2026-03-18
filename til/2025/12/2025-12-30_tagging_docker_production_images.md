@@ -1,4 +1,4 @@
-# 🧠 TIL: Getting Docker Image Tags Right in a Company Harbor Registry
+# TIL: Getting Docker Image Tags Right in a Company Harbor Registry
 _Date: 2025-12-30_
 
 Today I learned (the hard way) how **clear Docker image tagging rules** make a big difference when working with a company Harbor registry and CI/CD pipelines for application products.

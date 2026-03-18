@@ -1,4 +1,4 @@
-# 🧠 TIL: Making {renv} Work in a Multi-Stage Docker Build (Builder → Runtime)
+# TIL: Making {renv} Work in a Multi-Stage Docker Build (Builder → Runtime)
 _Date: 2026-01-23_
 
 

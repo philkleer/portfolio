@@ -1,4 +1,4 @@
-# 🧠 TIL: Speeding Up a Plumber API by Switching from JSON to Parquet
+# TIL: Speeding Up a Plumber API by Switching from JSON to Parquet
 
 _Date: 2026-02-20_
 

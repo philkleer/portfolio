@@ -1,4 +1,4 @@
-# 🧠 TIL: Where to Run Data Operations (PostgreSQL vs R engines like DuckDB/Polars)
+# TIL: Where to Run Data Operations (PostgreSQL vs R engines like DuckDB/Polars)
 
 _Date: 2026-02-05_
 
