@@ -46,6 +46,65 @@ Implementation of a production-like ML lifecycle with experiment tracking and da
 
 <details>
 
+<summary><h3>⬇️ MLOps Pipeline <i>Fiber Detection Model — From Training to Production</i></h3></summary>
+
+*Designing and deploying a production-ready machine learning pipeline under real-world infrastructure constraints.*
+
+### Overview
+This project focused on developing and operationalizing a **binary classification model to detect fiber connections**, along with a **fully automated MLOps pipeline** for continuous retraining and deployment.
+
+Due to platform constraints (no Airflow support and no shared MLflow instance), I designed a **Kubernetes-native MLOps architecture** that ensures reproducibility, automation, and robustness without relying on a standard stack.
+
+The result is a **self-contained production system** that aligns model development with real-world decision-making requirements.
+
+---
+
+### Key Contributions
+- Developed a **production-ready binary classifier** with a focus on high precision
+- Designed a **complete model selection workflow**, including:
+  - custom evaluation metrics (precision-first)
+  - threshold optimization based on business requirements
+  - probability calibration (Isotonic Regression)
+- Built an **automated retraining pipeline** using Kubernetes CronJobs
+- Implemented a **Champion/Challenger framework** for controlled model promotion
+- Established **MLflow as a single source of truth** for model versioning and deployment
+- Created a **lightweight, self-hosted MLflow infrastructure** (SQLite + S3)
+- Integrated **CI/CD deployment triggers** via GitLab pipelines
+- Designed **data versioning strategy** without a dedicated data platform
+
+---
+
+### Tech Stack
+- **Language:** Python  
+- **Modeling:** XGBoost, scikit-learn, Optuna  
+- **MLOps:** MLflow (self-hosted), Kubernetes CronJobs  
+- **Infrastructure:** Docker, Kubernetes, S3-compatible storage  
+- **CI/CD:** GitLab CI  
+
+---
+
+### Results & Impact
+- Delivered a **fully automated ML pipeline** from data ingestion to deployment  
+- Enabled **robust and reproducible model retraining** under constrained infrastructure  
+- Ensured **high-confidence predictions** through precision-focused modeling and calibration  
+- Reduced dependency on heavy tooling by leveraging **lightweight, scalable architecture**  
+- Established a **reusable MLOps blueprint** adaptable to similar environments  
+
+---
+
+### Notes
+📄 **Case study:**  
+See detailed write-up [here](notes/case-studies/2026-03-18_from_model_selection_to_production.md)
+
+See TIL note about model selection [here](til/2026/03/2026-03-11-workflow_choosing_model.md)
+
+See TIL note about production [here](til/2026/03/2026-03-18-putting_model_to_production.md)
+
+</details>
+
+
+<details>
+
 <summary><h3>⬇️ **Redesigning an Application in Production: _Instalometro na Conectividade na Saúde_**</h3></summary>
 Designing, hardening, and shipping a production-ready data application with a focus on performance, reproducibility, and maintainability.
 
@@ -368,7 +427,7 @@ _Last updated: 2026-03-19 07:55 UTC_
 
 ## About me
 
-Ph.D.-trained Data Scientist with 8+ years of experience in quantitative analysis, statistical modeling, and applied data science. I specialize in building reproducible analytical workflows and production-grade data applications that support data-driven decision-making.
+I'm a Data Scientist (PhD) with 8+ years of experience in quantitative research, statistical modeling, and data-driven decision support. Expert in bridging the gap between complex statistical modeling and production-grade MLOps, translating complex analyses into actionable insights for diverse stakeholders. Experienced in international and interdisciplinary environments.
 
 My work combines advanced statistical and Bayesian modeling, machine learning, and software engineering practices, with hands-on experience in R, Python, SQL, CI/CD, and containerized deployments. I focus on translating complex data into actionable insights through robust analysis, interactive dashboards, and clear analytical narratives.
 

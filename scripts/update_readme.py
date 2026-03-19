@@ -108,7 +108,7 @@ def collect_entries() -> tuple[List[Entry], List[Entry]]:
 
 
 def render_index(
-    cases: List[Entry], tils: List[Entry], til_limit: int = 12
+    cases: List[Entry], tils: List[Entry], til_limit: int = 20
 ) -> str:
     lines = []
     lines.append("## Case studies")
