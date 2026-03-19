@@ -399,6 +399,7 @@ This project explores the design of an end-to-end MLOps workflow, covering model
 
 <!-- START:INDEX -->
 ## Case studies
+- 2026-03-18 — [📊 Case Study: From Model Selection to Production MLOps under Real-World Constraints](notes/case-studies/2026-03-18_from_model_selection_to_production.md)
 - 2026-02-10 — [Redesigning an Application in Production: _Instalometro na Conectividade na Saúde_](notes/case-studies/2026-02-10_redesign_application_in_production.md)
 - 2026-01-05 — [Case Study: School Detection from Satellite Imagery](notes/case-studies/2026-01-05-school_detection_from_satellite_imagery.md)
 - 2025-12-17 — [How I build data-driven presentations with Quarto + revealjs (a real-world example)](notes/case-studies/2025-12-17-nota_estilo_apresentacoes_quarto_revealjs.md)
@@ -409,6 +410,7 @@ This project explores the design of an end-to-end MLOps workflow, covering model
 - 2025-08-14 — [Modularizing a Large Shiny App (R)](notes/case-studies/2025-08-14-modularizing-large-shiny-app.md)
 
 ## TIL: Latest Lessons
+- 2026-03-18 — [TIL: Building an MLOps Pipeline Without Airflow or Managed MLflow](til/2026/03/2026-03-18-putting_model_to_production.md)
 - 2026-03-11 — [TIL: A Practical Workflow for Finding a Production-Ready Binary Classifier](til/2026/03/2026-03-11-workflow_choosing_model.md)
 - 2026-03-04 — [TIL: Using Overture Maps instead of raw OSM for scalable network analysis](til/2026/03/2026-03-04-using-overturemaps.md)
 - 2026-02-28 — [TIL Refactoring a 200-Line SQL Query: Less CTEs, Fewer Scans](til/2026/02/2026-02-28-sql-optimization.md)
@@ -421,8 +423,15 @@ This project explores the design of an end-to-end MLOps workflow, covering model
 - 2026-01-15 — [TIL: Using `ellmer`, `gander`, `chores`, and `ensure` to Draft R Docs + Tests with an Ollama Connection](til/2026/01/2026-01-15_R_docs_with_ellmer_ensure_gande_chores.md)
 - 2026-01-09 — [TIL: Learning Window Functions in PostgreSQL (with Practical Examples)](til/2026/01/2026-01-09_postgresql_window_functions.md)
 - 2026-01-05 — [TIL: Geographic train/test splits are essential for honest geospatial ML evaluation](til/2026/01/2026-01-05_geo_train_test_split.md)
+- 2026-01-05 — [TIL: OpenStreetMap is powerful weak supervision—but it teaches what is *mapped*, not what *exists*](til/2026/01/2026-01-05-osm_weak_supervision.md)
+- 2026-01-05 — [TIL: Point labels are often better suited for *site detection* than for segmentation](til/2026/01/2026-01-05-point_labels_site_detection.md)
+- 2025-12-30 — [TIL: Getting Docker Image Tags Right in a Company Harbor Registry](til/2025/12/2025-12-30_tagging_docker_production_images.md)
+- 2025-12-12 — [TIL: Configuring Rate Limiting and IP Restriction in Kong Ingress](til/2025/12/2025-12-12-kong-plugins.md)
+- 2025-12-04 — [TIL: Building Machine Learning workflows in R with {tidymodels}](til/2025/12/2025-12-04_tidymodels_workflow.md)
+- 2025-11-19 — [TIL: Embedding Shiny elements inside Quarto Dashboards](til/2025/11/2025-11-19-quarto-dashboards-with-shiny.md)
+- 2025-11-10 — [TIL: Consistent naming across stack layers improves maintainability](til/2025/11/2025-11-10-consistent-naming.md)
 
-_Last updated: 2026-03-19 07:55 UTC_
+_Last updated: 2026-03-19 15:04 UTC_
 <!-- END:INDEX -->
 
 ## About me
