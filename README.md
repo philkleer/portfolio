@@ -431,7 +431,7 @@ This project explores the design of an end-to-end MLOps workflow, covering model
 - 2025-11-19 — [TIL: Embedding Shiny elements inside Quarto Dashboards](til/2025/11/2025-11-19-quarto-dashboards-with-shiny.md)
 - 2025-11-10 — [TIL: Consistent naming across stack layers improves maintainability](til/2025/11/2025-11-10-consistent-naming.md)
 
-_Last updated: 2026-03-19 15:04 UTC_
+_Last updated: 2026-03-20 07:54 UTC_
 <!-- END:INDEX -->
 
 ## About me
