@@ -158,7 +158,8 @@ Simple but effective:
 
 - Files never overwritten  
 - Version = filename (`eace_YYYY-MM-DD.xlsx`)  
-- Logged in MLflow  
+- Logged in MLflow
+- After ETL new data is pushed back to Gitlab  (`.parquet`)
 
 ---
 
@@ -174,18 +175,40 @@ Simple but effective:
 
 If model is better:
 
-- Register in MLflow as Production  
+- Register in MLflow as Production, else as challenger
 - Trigger GitLab CI  
 - Redeploy API  
 - Notify stakeholders  
 
 ---
 
-## 📉 Monitoring
+## 🔔 Monitoring & Alerting
 
-- Monthly evaluation on fresh data  
-- Detect drift  
-- Alert on degradation  
+To ensure ongoing model reliability, I implemented a Slack-based monitoring layer integrated into the retraining pipeline.
+
+### Notifcations
+
+Each pipeline run sends:
+
+- status of retraining (success/failure)
+- comparison results (better / worse than champion)
+- key metrics (precision, recall, threshold)
+
+### Alerts
+
+Automatic alerts are triggered when:
+
+```
+precision < 0.90
+OR
+recall < 0.80
+```
+
+This enables:
+
+- early detection of model degradation
+- rapid investigation of data or distribution shifts
+- operational visibility without manual monitoring
 
 ---
 
@@ -205,8 +228,8 @@ If model is better:
 
 # 🧠 Final Insight
 
-> Building production ML systems is not about tools —  
-> it’s about aligning modeling, evaluation, and infrastructure with real-world constraints.
+> Building production ML systems is not about tools — it’s about aligning modeling, evaluation, and infrastructure with real-world constraints.
+> Monitoring is not optional — a deployed model without alerts is a silent failure waiting to happen.
 
 ---
 
