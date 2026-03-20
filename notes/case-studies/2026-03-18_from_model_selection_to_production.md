@@ -1,95 +1,46 @@
-# 📊 Case Study: From Model Selection to Production MLOps under Real-World Constraints
+# 📊 Case Study: Serving ML in Production — From Model Selection to Reliable Inference
 
-_Date: 2026-03-18_  
-_Author: Philipp Kleer_
+_Date: 2026-03-20_
 
 ---
 
 ## 🚀 Context
 
-In this project, I developed a **binary classifier to detect fiber connections** and brought it into production within a constrained infrastructure environment.
+In this project, I developed and deployed a **binary classifier to detect fiber connections** and operationalized it end-to-end within a constrained infrastructure environment.
+
+What started as a modeling task evolved into a full system covering:
+
+👉 **Modeling → MLOps Pipeline → Monitoring → Serving (API)**
 
 Two main challenges emerged:
 
-1. **Finding a production-ready model**
-2. **Deploying it without standard MLOps tools (Airflow, managed MLflow)**
-
-This case study combines both aspects into a single, end-to-end workflow.
+1. Finding a production-ready model  
+2. Building a complete system without standard tools (Airflow, managed MLflow)  
 
 ---
 
 # 🧠 Part 1: Finding a Production-Ready Model
 
-## 🎯 Defining the Objective
-
-The key requirement was:
+## 🎯 Objective Definition
 
 > If the model predicts fiber → it must be correct
 
-This led to:
-- optimizing for **precision**, not accuracy  
-- making recall a secondary constraint  
+- Optimize for **precision**
+- Treat recall as a constraint
 
 ---
 
-## 🧪 Data Splitting Strategy
+## ⚙️ Modeling Workflow
 
-Instead of a simple train/test split:
-
-- Train (70%) → model training  
-- Calibration (15%) → probability calibration  
-- Test (15%) → final evaluation  
-
----
-
-## ⚖️ Model Benchmarking
-
-Tested models:
-- Logistic Regression  
-- Random Forest  
-- LightGBM / XGBoost  
-
-➡️ Boosting models performed best in precision.
+- Train / Calibration / Test split  
+- Boosting models (XGBoost) performed best  
+- Bayesian optimization (Optuna) improved results  
+- Threshold tuned to **precision ≥ 95%**  
+- Calibration (Isotonic Regression) ensured reliable probabilities  
 
 ---
 
-## 🔍 Metric Alignment
-
-Optimized explicitly for:
-
-> **Precision (positive class)**
-
-This aligned model selection with real-world needs.
-
----
-
-## ⚙️ Hyperparameter Optimization
-
-- Random Search → baseline  
-- Optuna (Bayesian) → improved performance  
-
----
-
-## 📉 Threshold Tuning
-
-Instead of default 0.5:
-
-- Used precision-recall curve  
-- Selected threshold with **precision ≥ 95%**
-
----
-
-## 📊 Calibration
-
-Applied **Isotonic Regression** to fix probability estimates.
-
-Result:
-- stable probabilities  
-- meaningful thresholds  
-
----
-
-## 🏁 Final Model Structure
+## 🏁 Final Model
 
 ```python
 {
@@ -101,143 +52,171 @@ Result:
 
 ---
 
-# ⚙️ Part 2: Building an MLOps Pipeline Without Standard Tools
+# ⚙️ Part 2: MLOps Pipeline (Without Standard Stack)
 
 ## 🚧 Constraints
 
-- No Airflow support  
-- No shared MLflow instance  
-- Limited Kubernetes environment  
+- No Airflow  
+- No shared MLflow  
+- Limited Kubernetes support  
 
 ---
 
-## 💡 Architecture Decision
-
-Instead of forcing tools:
-
-👉 Designed a **Kubernetes-native pipeline**
+## 💡 Solution: Kubernetes-Native Pipeline
 
 ```
-CronJob (monthly)
-   ↓
-Docker container
-   ↓
-Retrain → Evaluate → Compare → Deploy
+CronJob → Docker → Retrain → Evaluate → Compare → Deploy
 ```
 
 ---
 
 ## 🔁 Workflow
 
-Each run:
-
-1. Detect new data (file-based versioning)
-2. Load current production model (MLflow)
-3. Retrain model
-4. Calibrate probabilities
-5. Evaluate metrics at threshold
-6. Compare with champion
+- Detect new data (file-based versioning)  
+- Retrain + calibrate model  
+- Evaluate at business threshold  
+- Compare against champion  
 
 ---
 
-## ⚖️ Champion / Challenger Logic
+## ⚖️ Promotion Logic
 
-```text
+```
 precision_new ≥ precision_old
 AND recall_new ≥ recall_old - 0.02
 ```
 
-- Ensures precision improvements  
-- Limits recall degradation  
+---
+
+## 📦 Infrastructure
+
+- MLflow (SQLite + S3)  
+- GitLab CI/CD  
+- Docker + Kubernetes  
 
 ---
 
-## 🗂️ Data Versioning
+# 🔔 Part 3: Monitoring & Alerting
 
-Simple but effective:
+To make the system operational:
 
-- Files never overwritten  
-- Version = filename (`eace_YYYY-MM-DD.xlsx`)  
-- Logged in MLflow
-- After ETL new data is pushed back to Gitlab  (`.parquet`)
+## 📊 Notifications
 
----
+Each training run sends:
+- metrics (precision, recall, etc.)
+- promotion decision  
 
-## 📦 MLflow Setup (Minimal)
+## 🚨 Alerts
 
-- SQLite (PVC) → metadata  
-- S3 → artifacts  
-- Single pod → sufficient  
-
----
-
-## 📡 Deployment Flow
-
-If model is better:
-
-- Register in MLflow as Production, else as challenger
-- Trigger GitLab CI  
-- Redeploy API  
-- Notify stakeholders  
-
----
-
-## 🔔 Monitoring & Alerting
-
-To ensure ongoing model reliability, I implemented a Slack-based monitoring layer integrated into the retraining pipeline.
-
-### Notifcations
-
-Each pipeline run sends:
-
-- status of retraining (success/failure)
-- comparison results (better / worse than champion)
-- key metrics (precision, recall, threshold)
-
-### Alerts
-
-Automatic alerts are triggered when:
+Triggered when:
 
 ```
-precision < 0.90
-OR
-recall < 0.80
+precision < 0.90 OR recall < 0.80
 ```
 
 This enables:
+- early detection of drift  
+- fast investigation  
+- operational visibility  
 
-- early detection of model degradation
-- rapid investigation of data or distribution shifts
-- operational visibility without manual monitoring
+---
+
+# 🌐 Part 4: Serving the Model via API
+
+## 💡 Motivation
+
+A model is only useful if it is **easy to consume**.
+
+Instead of embedding logic everywhere:
+
+👉 Built a **FastAPI-based internal API**
+
+---
+
+## ⚙️ API Design
+
+- Loads models dynamically from MLflow  
+- Supports batch predictions via file upload  
+- Returns results in **Parquet / CSV**  
+- Provides model inspection endpoints  
+
+---
+
+## 🔑 Key Features
+
+### Model Loading
+- Uses MLflow aliases (`champion`)  
+- Dynamically downloads model bundles  
+
+### Startup Optimization
+- Caches model in memory  
+- Reduces latency  
+
+### Efficient Predictions
+- Uses **Polars** for performance  
+- Handles large datasets  
+
+### Output Design
+- Parquet → efficient pipelines  
+- CSV → usability  
+
+---
+
+## 🔁 Inference Flow
+
+```
+Client → Upload file → API
+        ↓
+   Validate schema
+        ↓
+   Load model (MLflow/cache)
+        ↓
+   Predict (model + calibration + threshold)
+        ↓
+   Return results
+```
 
 ---
 
 # 🧾 Key Takeaways
 
 ### Modeling
-- Define objective first (precision vs recall)
-- Tune threshold explicitly
-- Always calibrate probabilities
+- Define objective first  
+- Tune thresholds explicitly  
+- Always calibrate probabilities  
 
 ### MLOps
-- You don’t need a perfect stack
-- Kubernetes CronJobs can replace Airflow
-- Simple solutions (file versioning, SQLite MLflow) can be sufficient
+- Work within constraints  
+- Lightweight infrastructure can be enough  
+- Automate retraining and deployment  
+
+### Serving
+- APIs are essential for usability  
+- File-based batch inference scales well  
+- Performance matters (Polars, Parquet)  
+
+### Operations
+- Monitoring is mandatory  
+- Alerts turn systems into operable services  
 
 ---
 
 # 🧠 Final Insight
 
-> Building production ML systems is not about tools — it’s about aligning modeling, evaluation, and infrastructure with real-world constraints.
-> Monitoring is not optional — a deployed model without alerts is a silent failure waiting to happen.
+> Serving ML in production is not about a single tool or step —  
+> it is about connecting modeling, pipelines, monitoring, and serving into a coherent system.
 
 ---
 
-# 🔥 Why This Matters
+# 🔥 Impact
 
-This approach enabled within a constrained environment:
+This system enabled:
 
 - reproducible training  
 - automated retraining  
 - controlled deployment decisions  
-- stable production predictions  
+- real-time monitoring  
+- scalable and efficient model consumption  
+
+—all within a constrained environment.
+
