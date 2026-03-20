@@ -410,6 +410,7 @@ This project explores the design of an end-to-end MLOps workflow, covering model
 - 2025-08-14 — [Modularizing a Large Shiny App (R)](notes/case-studies/2025-08-14-modularizing-large-shiny-app.md)
 
 ## TIL: Latest Lessons
+- 2026-03-20 — [TIL: Integrating Slack Alerts into an MLOps Pipeline for Real-Time Monitoring](til/2026/03/2026-03-20_monitoring_and_alerts.md)
 - 2026-03-18 — [TIL: Building an MLOps Pipeline Without Airflow or Managed MLflow](til/2026/03/2026-03-18-putting_model_to_production.md)
 - 2026-03-11 — [TIL: A Practical Workflow for Finding a Production-Ready Binary Classifier](til/2026/03/2026-03-11-workflow_choosing_model.md)
 - 2026-03-04 — [TIL: Using Overture Maps instead of raw OSM for scalable network analysis](til/2026/03/2026-03-04-using-overturemaps.md)
@@ -429,9 +430,8 @@ This project explores the design of an end-to-end MLOps workflow, covering model
 - 2025-12-12 — [TIL: Configuring Rate Limiting and IP Restriction in Kong Ingress](til/2025/12/2025-12-12-kong-plugins.md)
 - 2025-12-04 — [TIL: Building Machine Learning workflows in R with {tidymodels}](til/2025/12/2025-12-04_tidymodels_workflow.md)
 - 2025-11-19 — [TIL: Embedding Shiny elements inside Quarto Dashboards](til/2025/11/2025-11-19-quarto-dashboards-with-shiny.md)
-- 2025-11-10 — [TIL: Consistent naming across stack layers improves maintainability](til/2025/11/2025-11-10-consistent-naming.md)
 
-_Last updated: 2026-03-20 07:54 UTC_
+_Last updated: 2026-03-20 10:17 UTC_
 <!-- END:INDEX -->
 
 ## About me
