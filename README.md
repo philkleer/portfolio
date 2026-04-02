@@ -24,6 +24,9 @@ Each entry includes technical explanations, code snippets, results, and lessons 
 
 These projects represent my most relevant work as an applied Data Scientist, with a focus on **production systems**, **reproducible analytics**, and **decision support**.
 
+1. **MLOps Pipeline: Fiber Detection Model — From Training to Production**
+Designing end-to-end ML classifier in production environment (Kubernetes, MLflow, CI/CD).
+
 1. **Redesigning an Application in Production: _Instalometro na Conectividade na Saúde_**
 Designing, hardening, and shipping a production-ready data application with a focus on performance, reproducibility, and maintainability.
 
