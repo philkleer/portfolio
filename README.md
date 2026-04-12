@@ -434,7 +434,7 @@ This project explores the design of an end-to-end MLOps workflow, covering model
 - 2025-12-12 — [TIL: Configuring Rate Limiting and IP Restriction in Kong Ingress](til/2025/12/2025-12-12-kong-plugins.md)
 - 2025-12-04 — [TIL: Building Machine Learning workflows in R with {tidymodels}](til/2025/12/2025-12-04_tidymodels_workflow.md)
 
-_Last updated: 2026-04-11 07:56 UTC_
+_Last updated: 2026-04-12 08:08 UTC_
 <!-- END:INDEX -->
 
 ## About me
