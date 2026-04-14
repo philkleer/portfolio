@@ -413,6 +413,7 @@ This project explores the design of an end-to-end MLOps workflow, covering model
 - 2025-08-14 — [Modularizing a Large Shiny App (R)](notes/case-studies/2025-08-14-modularizing-large-shiny-app.md)
 
 ## TIL: Latest Lessons
+- 2026-04-14 — [🧠 TIL: Debugging a 9s Shiny Startup — When the Problem Was Kubernetes, Not R](til/2026/04/2026-04-14_shiny_cold_start_kubernetes.md)
 - 2026-03-20 — [TIL: Integrating Slack Alerts into an MLOps Pipeline for Real-Time Monitoring](til/2026/03/2026-03-20_monitoring_and_alerts.md)
 - 2026-03-19 — [TIL: Building a Lightweight Internal ML API with FastAPI + MLflow](til/2026/03/2026-03-19_model_access_via_api.md)
 - 2026-03-18 — [TIL: Building an MLOps Pipeline Without Airflow or Managed MLflow](til/2026/03/2026-03-18-putting_model_to_production.md)
@@ -432,9 +433,8 @@ This project explores the design of an end-to-end MLOps workflow, covering model
 - 2026-01-05 — [TIL: Geographic train/test splits are essential for honest geospatial ML evaluation](til/2026/01/2026-01-05_geo_train_test_split.md)
 - 2025-12-30 — [TIL: Getting Docker Image Tags Right in a Company Harbor Registry](til/2025/12/2025-12-30_tagging_docker_production_images.md)
 - 2025-12-12 — [TIL: Configuring Rate Limiting and IP Restriction in Kong Ingress](til/2025/12/2025-12-12-kong-plugins.md)
-- 2025-12-04 — [TIL: Building Machine Learning workflows in R with {tidymodels}](til/2025/12/2025-12-04_tidymodels_workflow.md)
 
-_Last updated: 2026-04-14 08:54 UTC_
+_Last updated: 2026-04-14 13:36 UTC_
 <!-- END:INDEX -->
 
 ## About me
