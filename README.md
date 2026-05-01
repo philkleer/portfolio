@@ -434,7 +434,7 @@ This project explores the design of an end-to-end MLOps workflow, covering model
 - 2025-12-30 — [TIL: Getting Docker Image Tags Right in a Company Harbor Registry](til/2025/12/2025-12-30_tagging_docker_production_images.md)
 - 2025-12-12 — [TIL: Configuring Rate Limiting and IP Restriction in Kong Ingress](til/2025/12/2025-12-12-kong-plugins.md)
 
-_Last updated: 2026-04-30 09:25 UTC_
+_Last updated: 2026-05-01 09:10 UTC_
 <!-- END:INDEX -->
 
 ## About me
