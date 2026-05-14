@@ -473,6 +473,7 @@ This project explores the design of an end-to-end MLOps workflow, covering model
 
 <!-- START:INDEX -->
 ## Case studies
+- 2026-05-14 — [Case Study: Building a Production Geospatial ML Pipeline for Fiber Connectivity Classification](notes/case-studies/2026-05-14_production_system.md)
 - 2026-03-18 — [📊 Case Study: Serving ML in Production — From Model Selection to Reliable Inference](notes/case-studies/2026-03-18_from_model_selection_to_production.md)
 - 2026-02-10 — [Redesigning an Application in Production: _Instalometro na Conectividade na Saúde_](notes/case-studies/2026-02-10_redesign_application_in_production.md)
 - 2026-01-05 — [Case Study: School Detection from Satellite Imagery](notes/case-studies/2026-01-05-school_detection_from_satellite_imagery.md)
@@ -484,7 +485,9 @@ This project explores the design of an end-to-end MLOps workflow, covering model
 - 2025-08-14 — [Modularizing a Large Shiny App (R)](notes/case-studies/2025-08-14-modularizing-large-shiny-app.md)
 
 ## TIL: Latest Lessons
-- 2026-04-14 — [🧠 TIL: Debugging a 9s Shiny Startup — When the Problem Was Kubernetes, Not R](til/2026/04/2026-04-14_shiny_cold_start_kubernetes.md)
+- 2026-05-12 — [TIL: Building a reproducible geospatial measurement ingestion pipeline for ML inference](til/2026/05/2026-05-12_geospatial_data_ingestion_pipeline.md)
+- 2026-05-05 — [TIL: Building a Production Geospatial Pipeline with OvertureMaps, uv, and Kubernetes](til/2026/05/2026-05-05_overturemaps_pipeline.md)
+- 2026-04-14 — [TIL: Debugging a 9s Shiny Startup — When the Problem Was Kubernetes, Not R](til/2026/04/2026-04-14_shiny_cold_start_kubernetes.md)
 - 2026-03-20 — [TIL: Integrating Slack Alerts into an MLOps Pipeline for Real-Time Monitoring](til/2026/03/2026-03-20_monitoring_and_alerts.md)
 - 2026-03-19 — [TIL: Building a Lightweight Internal ML API with FastAPI + MLflow](til/2026/03/2026-03-19_model_access_via_api.md)
 - 2026-03-18 — [TIL: Building an MLOps Pipeline Without Airflow or Managed MLflow](til/2026/03/2026-03-18-putting_model_to_production.md)
@@ -501,11 +504,9 @@ This project explores the design of an end-to-end MLOps workflow, covering model
 - 2026-01-15 — [TIL: Using `ellmer`, `gander`, `chores`, and `ensure` to Draft R Docs + Tests with an Ollama Connection](til/2026/01/2026-01-15_R_docs_with_ellmer_ensure_gande_chores.md)
 - 2026-01-09 — [TIL: Learning Window Functions in PostgreSQL (with Practical Examples)](til/2026/01/2026-01-09_postgresql_window_functions.md)
 - 2026-01-05 — [TIL: OpenStreetMap is powerful weak supervision—but it teaches what is *mapped*, not what *exists*](til/2026/01/2026-01-05-osm_weak_supervision.md)
-- 2026-01-05 — [TIL: Geographic train/test splits are essential for honest geospatial ML evaluation](til/2026/01/2026-01-05_geo_train_test_split.md)
 - 2026-01-05 — [TIL: Point labels are often better suited for *site detection* than for segmentation](til/2026/01/2026-01-05-point_labels_site_detection.md)
-- 2025-12-30 — [TIL: Getting Docker Image Tags Right in a Company Harbor Registry](til/2025/12/2025-12-30_tagging_docker_production_images.md)
 
-_Last updated: 2026-05-14 09:40 UTC_
+_Last updated: 2026-05-14 16:34 UTC_
 <!-- END:INDEX -->
 
 ## About me
