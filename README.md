@@ -24,6 +24,9 @@ Each entry includes technical explanations, code snippets, results, and lessons 
 
 These projects represent my most relevant work as an applied Data Scientist, with a focus on **production systems**, **reproducible analytics**, and **decision support**.
 
+1. **Production Geospatial ML Pipeline for Fiber Connectivity Classification**
+Designing and operationalizing an end-to-end geospatial ML system with OvertureMaps, PostgreSQL, FastAPI, Kubernetes, and scalable inference workflows.
+
 1. **MLOps Pipeline: Fiber Detection Model — From Training to Production**
 Designing end-to-end ML classifier in production environment (Kubernetes, MLflow, CI/CD).
 
@@ -46,6 +49,74 @@ Statistical analysis and visual storytelling to support technical and policy-ori
 Implementation of a production-like ML lifecycle with experiment tracking and data/model versioning.
 
 ## Detailed Projects
+
+<details>
+
+<summary><h3>🗺️ Production Geospatial ML Pipeline for Fiber Connectivity Classification</h3></summary>
+
+*Designing and operationalizing a Kubernetes-native geospatial ML system for large-scale fiber connectivity inference using OvertureMaps, PostgreSQL, FastAPI, and Polars.*
+
+### Overview
+
+This project evolved from a standalone machine learning classifier into a complete **production-grade geospatial ML platform** capable of continuously generating spatial inference outputs for Brazilian municipalities.
+
+The system combines:
+
+- large-scale geospatial ingestion with **OvertureMaps**
+- connectivity measurement aggregation from multiple PostgreSQL systems
+- feature engineering with **Polars**
+- internal model serving with **FastAPI**
+- reproducible orchestration with **Kubernetes CronJobs**
+- artifact persistence via **S3-compatible object storage**
+
+The goal was not only to build a performant classifier, but to design a fully reproducible and operationally maintainable end-to-end ML workflow under constrained infrastructure conditions (without Airflow or centralized MLflow infrastructure).
+
+### Key Contributions
+
+- Designed and implemented a **production-grade geospatial ML architecture**
+- Built scalable geospatial ingestion workflows using **OvertureMaps** and `city2graph`
+- Developed a **bronze/silver/gold geospatial data pipeline**
+- Aggregated and filtered high-volume connectivity measurements directly in **PostgreSQL**
+- Implemented memory-efficient feature engineering pipelines with **Polars**
+- Created an internal **FastAPI inference service** supporting parquet-based batch prediction
+- Operationalized model serving using **Champion/Challenger workflows**
+- Built reproducible orchestration using **Kubernetes CronJobs**
+- Implemented artifact persistence using **S3 + Git reference tracking**
+- Exported GIS-ready outputs as **GeoPackages** for downstream spatial analysis
+
+### Architecture Highlights
+
+- **Geospatial ingestion:** OvertureMaps → graph/network generation
+- **Data processing:** PostgreSQL aggregation + Polars feature engineering
+- **ML serving:** FastAPI + parquet streaming inference
+- **Orchestration:** Kubernetes-native scheduled workflows
+- **Storage:** S3-compatible object storage with lightweight Git references
+- **Outputs:** GIS-ready classified road network datasets
+
+### Tech Stack
+
+- **Languages:** Python, SQL
+- **Data Processing:** Polars, PostgreSQL
+- **Geospatial:** OvertureMaps, GeoPandas, Shapely, GeoPackage
+- **ML / Serving:** MLflow, FastAPI
+- **Infrastructure:** Docker, Kubernetes, S3-compatible object storage
+- **Environment Management:** `uv`
+
+### Results & Impact
+
+- Enabled reproducible large-scale geospatial ML inference workflows
+- Reduced operational complexity compared to raw OpenStreetMap segmentation workflows
+- Improved scalability and maintainability through layered data architecture
+- Established reusable infrastructure for future geospatial ML projects
+- Demonstrated production ML orchestration under infrastructure constraints
+
+### Related Notes & Case Studies
+
+- [Overture Pipeline](til/2026/05/2026-05-05_overturemaps_pipeline.md)
+- [Geospatial data ingestion](til/2026/05/2026-05-12_geospatial_data_ingestion_pipeline.md)
+- [Case Study ML Pipeline](notes/case-studies/2026-05-14_production_system.md)
+
+</details>
 
 <details>
 

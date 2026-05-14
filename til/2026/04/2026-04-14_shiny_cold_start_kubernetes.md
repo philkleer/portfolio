@@ -1,4 +1,4 @@
-# 🧠 TIL: Debugging a 9s Shiny Startup — When the Problem Was Kubernetes, Not R
+# TIL: Debugging a 9s Shiny Startup — When the Problem Was Kubernetes, Not R
 
 _Date: 2026-04-14_  
 
