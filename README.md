@@ -506,7 +506,7 @@ This project explores the design of an end-to-end MLOps workflow, covering model
 - 2026-01-05 — [TIL: OpenStreetMap is powerful weak supervision—but it teaches what is *mapped*, not what *exists*](til/2026/01/2026-01-05-osm_weak_supervision.md)
 - 2026-01-05 — [TIL: Geographic train/test splits are essential for honest geospatial ML evaluation](til/2026/01/2026-01-05_geo_train_test_split.md)
 
-_Last updated: 2026-05-25 11:16 UTC_
+_Last updated: 2026-05-27 11:00 UTC_
 <!-- END:INDEX -->
 
 ## About me
