@@ -485,6 +485,7 @@ This project explores the design of an end-to-end MLOps workflow, covering model
 - 2025-08-14 — [Modularizing a Large Shiny App (R)](notes/case-studies/2025-08-14-modularizing-large-shiny-app.md)
 
 ## TIL: Latest Lessons
+- 2026-05-24 — [TIL: Adding data validation and drift detection to an ML retraining pipeline](til/2026/05/2026-05-24_data_validation_and_drift_detection.md)
 - 2026-05-12 — [TIL: Building a reproducible geospatial measurement ingestion pipeline for ML inference](til/2026/05/2026-05-12_geospatial_data_ingestion_pipeline.md)
 - 2026-05-05 — [TIL: Building a Production Geospatial Pipeline with OvertureMaps, uv, and Kubernetes](til/2026/05/2026-05-05_overturemaps_pipeline.md)
 - 2026-04-14 — [TIL: Debugging a 9s Shiny Startup — When the Problem Was Kubernetes, Not R](til/2026/04/2026-04-14_shiny_cold_start_kubernetes.md)
@@ -504,9 +505,8 @@ This project explores the design of an end-to-end MLOps workflow, covering model
 - 2026-01-15 — [TIL: Using `ellmer`, `gander`, `chores`, and `ensure` to Draft R Docs + Tests with an Ollama Connection](til/2026/01/2026-01-15_R_docs_with_ellmer_ensure_gande_chores.md)
 - 2026-01-09 — [TIL: Learning Window Functions in PostgreSQL (with Practical Examples)](til/2026/01/2026-01-09_postgresql_window_functions.md)
 - 2026-01-05 — [TIL: OpenStreetMap is powerful weak supervision—but it teaches what is *mapped*, not what *exists*](til/2026/01/2026-01-05-osm_weak_supervision.md)
-- 2026-01-05 — [TIL: Geographic train/test splits are essential for honest geospatial ML evaluation](til/2026/01/2026-01-05_geo_train_test_split.md)
 
-_Last updated: 2026-05-27 11:00 UTC_
+_Last updated: 2026-05-27 11:55 UTC_
 <!-- END:INDEX -->
 
 ## About me
