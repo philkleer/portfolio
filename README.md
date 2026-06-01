@@ -506,7 +506,7 @@ This project explores the design of an end-to-end MLOps workflow, covering model
 - 2026-01-09 — [TIL: Learning Window Functions in PostgreSQL (with Practical Examples)](til/2026/01/2026-01-09_postgresql_window_functions.md)
 - 2026-01-05 — [TIL: Geographic train/test splits are essential for honest geospatial ML evaluation](til/2026/01/2026-01-05_geo_train_test_split.md)
 
-_Last updated: 2026-05-31 09:57 UTC_
+_Last updated: 2026-06-01 12:49 UTC_
 <!-- END:INDEX -->
 
 ## About me
