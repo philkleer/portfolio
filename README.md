@@ -506,7 +506,7 @@ This project explores the design of an end-to-end MLOps workflow, covering model
 - 2026-01-09 — [TIL: Learning Window Functions in PostgreSQL (with Practical Examples)](til/2026/01/2026-01-09_postgresql_window_functions.md)
 - 2026-01-05 — [TIL: OpenStreetMap is powerful weak supervision—but it teaches what is *mapped*, not what *exists*](til/2026/01/2026-01-05-osm_weak_supervision.md)
 
-_Last updated: 2026-06-13 10:07 UTC_
+_Last updated: 2026-06-14 10:31 UTC_
 <!-- END:INDEX -->
 
 ## About me
