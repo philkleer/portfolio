@@ -503,6 +503,7 @@ This project explores the design of an end-to-end MLOps workflow, covering model
 
 <!-- START:INDEX -->
 ## Case studies
+- 2026-06-25 — [Case Study: From Data Pipelines to Production GIS Products](notes/case-studies/2026-06-25_from_data_pipelines_to_production_gis_products.md)
 - 2026-05-14 — [Case Study: Building a Production Geospatial ML Pipeline for Fiber Connectivity Classification](notes/case-studies/2026-05-14_production_system.md)
 - 2026-03-18 — [📊 Case Study: Serving ML in Production — From Model Selection to Reliable Inference](notes/case-studies/2026-03-18_from_model_selection_to_production.md)
 - 2026-02-10 — [Redesigning an Application in Production: _Instalometro na Conectividade na Saúde_](notes/case-studies/2026-02-10_redesign_application_in_production.md)
@@ -515,6 +516,7 @@ This project explores the design of an end-to-end MLOps workflow, covering model
 - 2025-08-14 — [Modularizing a Large Shiny App (R)](notes/case-studies/2025-08-14-modularizing-large-shiny-app.md)
 
 ## TIL: Latest Lessons
+- 2026-06-15 — [TIL: Orchestrating Production Data Pipelines with Kubernetes CronJobs (Without Airflow)](til/2026/06/2026-06-15_cronjob_orchestration_k8s.md)
 - 2026-05-24 — [TIL: Adding data validation and drift detection to an ML retraining pipeline](til/2026/05/2026-05-24_data_validation_and_drift_detection.md)
 - 2026-05-12 — [TIL: Building a reproducible geospatial measurement ingestion pipeline for ML inference](til/2026/05/2026-05-12_geospatial_data_ingestion_pipeline.md)
 - 2026-05-05 — [TIL: Building a Production Geospatial Pipeline with OvertureMaps, uv, and Kubernetes](til/2026/05/2026-05-05_overturemaps_pipeline.md)
@@ -534,9 +536,8 @@ This project explores the design of an end-to-end MLOps workflow, covering model
 - 2026-01-19 — [TIL: Shrinking Docker Images with Multi-Stage Builds (Builder + Runtime)](til/2026/01/2026-01-19_splitting_up_docker_image.md)
 - 2026-01-15 — [TIL: Using `ellmer`, `gander`, `chores`, and `ensure` to Draft R Docs + Tests with an Ollama Connection](til/2026/01/2026-01-15_R_docs_with_ellmer_ensure_gande_chores.md)
 - 2026-01-09 — [TIL: Learning Window Functions in PostgreSQL (with Practical Examples)](til/2026/01/2026-01-09_postgresql_window_functions.md)
-- 2026-01-05 — [TIL: OpenStreetMap is powerful weak supervision—but it teaches what is *mapped*, not what *exists*](til/2026/01/2026-01-05-osm_weak_supervision.md)
 
-_Last updated: 2026-06-25 10:20 UTC_
+_Last updated: 2026-06-25 17:02 UTC_
 <!-- END:INDEX -->
 
 ## About me
