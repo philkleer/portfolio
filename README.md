@@ -30,7 +30,7 @@ Designing and operationalizing an end-to-end geospatial ML system with OvertureM
 1. **MLOps Pipeline: Fiber Detection Model — From Training to Production**
 Designing end-to-end ML classifier in production environment (Kubernetes, MLflow, CI/CD).
 
-1. **Redesigning an Application in Production: _Instalometro na Conectividade na Saúde_**
+1. **Redesigning an Application in Production: Instalometro na Conectividade na Saúde**
 Designing, hardening, and shipping a production-ready data application with a focus on performance, reproducibility, and maintainability.
 
 1. **Modularizing a Large Shiny Application (OBIA)**  
@@ -52,69 +52,99 @@ Implementation of a production-like ML lifecycle with experiment tracking and da
 
 <details>
 
-<summary><h3>🗺️ Production Geospatial ML Pipeline for Fiber Connectivity Classification</h3></summary>
+<summary><h3>🗺️ Production Geospatial Data & ML Platform for Fiber Connectivity Analysis</h3></summary>
 
-*Designing and operationalizing a Kubernetes-native geospatial ML system for large-scale fiber connectivity inference using OvertureMaps, PostgreSQL, FastAPI, and Polars.*
+*Designing and operationalizing a Kubernetes-native geospatial data and ML platform that continuously generates production-ready GIS products from large-scale map, connectivity, and machine learning data.*
 
 ### Overview
 
-This project evolved from a standalone machine learning classifier into a complete **production-grade geospatial ML platform** capable of continuously generating spatial inference outputs for Brazilian municipalities.
+This project evolved from a standalone machine learning classifier into a complete **production-grade geospatial data platform** capable of continuously generating GIS products for fiber connectivity analysis across Brazilian municipalities.
 
-The system combines:
+The platform integrates every stage of the data lifecycle:
 
 - large-scale geospatial ingestion with **OvertureMaps**
-- connectivity measurement aggregation from multiple PostgreSQL systems
-- feature engineering with **Polars**
-- internal model serving with **FastAPI**
+- connectivity measurement aggregation from **PostgreSQL**
+- scalable feature engineering with **Polars**
+- machine learning inference through an internal **FastAPI** service
+- automated product generation for GIS analysis
 - reproducible orchestration with **Kubernetes CronJobs**
-- artifact persistence via **S3-compatible object storage**
+- artifact persistence using **S3-compatible object storage**
+- operational monitoring through **Slack**
 
-The goal was not only to build a performant classifier, but to design a fully reproducible and operationally maintainable end-to-end ML workflow under constrained infrastructure conditions (without Airflow or centralized MLflow infrastructure).
+Rather than focusing solely on model development, the project emphasizes **reproducibility, scalability, modular architecture, and operational automation**, enabling continuous production of GIS-ready datasets under constrained infrastructure (without Airflow or centrally managed MLflow).
 
 ### Key Contributions
 
-- Designed and implemented a **production-grade geospatial ML architecture**
+- Designed and implemented an end-to-end **production geospatial data and ML architecture**
 - Built scalable geospatial ingestion workflows using **OvertureMaps** and `city2graph`
-- Developed a **bronze/silver/gold geospatial data pipeline**
-- Aggregated and filtered high-volume connectivity measurements directly in **PostgreSQL**
-- Implemented memory-efficient feature engineering pipelines with **Polars**
-- Created an internal **FastAPI inference service** supporting parquet-based batch prediction
-- Operationalized model serving using **Champion/Challenger workflows**
-- Built reproducible orchestration using **Kubernetes CronJobs**
-- Implemented artifact persistence using **S3 + Git reference tracking**
-- Exported GIS-ready outputs as **GeoPackages** for downstream spatial analysis
+- Developed a layered **bronze/silver/gold** data architecture
+- Aggregated high-volume connectivity measurements directly in **PostgreSQL**
+- Implemented memory-efficient feature engineering pipelines using **Polars**
+- Built an internal **FastAPI** inference service supporting batch predictions with Parquet
+- Operationalized model serving using **Champion/Challenger** workflows with MLflow
+- Designed modular product pipelines that generate reusable GIS artifacts
+- Built Kubernetes-native orchestration using **CronJobs**
+- Implemented automated publishing to **S3-compatible object storage**
+- Integrated operational monitoring and failure notifications through **Slack**
+- Generated GIS-ready **GeoPackages** for downstream spatial analysis and planning
 
 ### Architecture Highlights
 
-- **Geospatial ingestion:** OvertureMaps → graph/network generation
-- **Data processing:** PostgreSQL aggregation + Polars feature engineering
-- **ML serving:** FastAPI + parquet streaming inference
-- **Orchestration:** Kubernetes-native scheduled workflows
-- **Storage:** S3-compatible object storage with lightweight Git references
-- **Outputs:** GIS-ready classified road network datasets
+```
+OvertureMaps
+        │
+        ▼
+Geospatial Data Pipeline
+        │
+        ▼
+Connectivity Measurements
+        │
+        ▼
+Feature Engineering (Polars)
+        │
+        ▼
+FastAPI ML Inference
+        │
+        ▼
+GIS Product Generation
+        │
+        ▼
+GeoPackages
+        │
+        ▼
+S3 + Slack + Kubernetes
+```
 
 ### Tech Stack
 
 - **Languages:** Python, SQL
 - **Data Processing:** Polars, PostgreSQL
-- **Geospatial:** OvertureMaps, GeoPandas, Shapely, GeoPackage
+- **Geospatial:** OvertureMaps, GeoPandas, Shapely, H3, igraph, GeoPackage
 - **ML / Serving:** MLflow, FastAPI
-- **Infrastructure:** Docker, Kubernetes, S3-compatible object storage
+- **Infrastructure:** Docker, Kubernetes, GitLab CI/CD, S3-compatible object storage
 - **Environment Management:** `uv`
 
 ### Results & Impact
 
-- Enabled reproducible large-scale geospatial ML inference workflows
-- Reduced operational complexity compared to raw OpenStreetMap segmentation workflows
-- Improved scalability and maintainability through layered data architecture
-- Established reusable infrastructure for future geospatial ML projects
-- Demonstrated production ML orchestration under infrastructure constraints
+- Built a fully automated geospatial data platform for continuous GIS product generation
+- Reduced operational complexity compared to OpenStreetMap-based segmentation workflows
+- Established reproducible city-by-city geospatial processing pipelines
+- Enabled scalable production of machine learning inference datasets and planning products
+- Demonstrated production-grade orchestration without Airflow using lightweight Kubernetes-native components
+- Created reusable infrastructure that can easily be extended with additional GIS products
 
 ### Related Notes & Case Studies
 
-- [Overture Pipeline](til/2026/05/2026-05-05_overturemaps_pipeline.md)
-- [Geospatial data ingestion](til/2026/05/2026-05-12_geospatial_data_ingestion_pipeline.md)
-- [Case Study ML Pipeline](notes/case-studies/2026-05-14_production_system.md)
+#### Case Studies
+
+- [Production Geospatial ML Pipeline](notes/case-studies/2026-05-14_production_system.md)
+- [Geospatial Terrain Classification System](notes/case-studies/2026-06-20_production_implementation.md)
+- [From Data Pipelines to Production GIS Products](notes/case-studies/2026-06-25_from_data_pipelines_to_production_gis_products.md)
+
+#### Today I Learned
+
+- [OvertureMaps Pipeline](til/2026/05/2026-05-05_overturemaps_pipeline.md)
+- [Geospatial Data Ingestion Pipeline](til/2026/05/2026-05-12_geospatial_data_ingestion_pipeline.md)
 
 </details>
 
@@ -179,7 +209,7 @@ See TIL note about production [here](til/2026/03/2026-03-18-putting_model_to_pro
 
 <details>
 
-<summary><h3>⬇️ **Redesigning an Application in Production: _Instalometro na Conectividade na Saúde_**</h3></summary>
+<summary><h3>⬇️ Redesigning an Application in Production: Instalometro na Conectividade na Saúde</h3></summary>
 Designing, hardening, and shipping a production-ready data application with a focus on performance, reproducibility, and maintainability.
 
 ---
