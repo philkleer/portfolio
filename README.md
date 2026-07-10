@@ -537,7 +537,7 @@ This project explores the design of an end-to-end MLOps workflow, covering model
 - 2026-01-15 — [TIL: Using `ellmer`, `gander`, `chores`, and `ensure` to Draft R Docs + Tests with an Ollama Connection](til/2026/01/2026-01-15_R_docs_with_ellmer_ensure_gande_chores.md)
 - 2026-01-09 — [TIL: Learning Window Functions in PostgreSQL (with Practical Examples)](til/2026/01/2026-01-09_postgresql_window_functions.md)
 
-_Last updated: 2026-07-09 10:31 UTC_
+_Last updated: 2026-07-10 10:29 UTC_
 <!-- END:INDEX -->
 
 ## About me
