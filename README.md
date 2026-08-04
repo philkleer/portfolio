@@ -516,6 +516,8 @@ This project explores the design of an end-to-end MLOps workflow, covering model
 - 2025-08-14 — [Modularizing a Large Shiny App (R)](notes/case-studies/2025-08-14-modularizing-large-shiny-app.md)
 
 ## TIL: Latest Lessons
+- 2026-07-22 — [TIL: Posterior Predictive Checks and Diagnostics with `arviz`](til/2026/07/2026-07-22_posterior_predictive_checks_with_arviz.md)
+- 2026-07-20 — [TIL: Bayesian Mixed-Effects Regression with `bambi`](til/2026/07/2026-07-20_bayesian_regression_with_bambi.md)
 - 2026-06-15 — [TIL: Orchestrating Production Data Pipelines with Kubernetes CronJobs (Without Airflow)](til/2026/06/2026-06-15_cronjob_orchestration_k8s.md)
 - 2026-05-24 — [TIL: Adding data validation and drift detection to an ML retraining pipeline](til/2026/05/2026-05-24_data_validation_and_drift_detection.md)
 - 2026-05-12 — [TIL: Building a reproducible geospatial measurement ingestion pipeline for ML inference](til/2026/05/2026-05-12_geospatial_data_ingestion_pipeline.md)
@@ -534,10 +536,8 @@ This project explores the design of an end-to-end MLOps workflow, covering model
 - 2026-01-25 — [TIL: Migrating to Docker Buildx with Registry Cache (and Why It’s Worth Showing)](til/2026/01/2026-01-25_using_buildx_docker.md)
 - 2026-01-23 — [TIL: Making {renv} Work in a Multi-Stage Docker Build (Builder → Runtime)](til/2026/01/2026-01-23_using_renv_in_multi-stage_docker.md)
 - 2026-01-19 — [TIL: Shrinking Docker Images with Multi-Stage Builds (Builder + Runtime)](til/2026/01/2026-01-19_splitting_up_docker_image.md)
-- 2026-01-15 — [TIL: Using `ellmer`, `gander`, `chores`, and `ensure` to Draft R Docs + Tests with an Ollama Connection](til/2026/01/2026-01-15_R_docs_with_ellmer_ensure_gande_chores.md)
-- 2026-01-09 — [TIL: Learning Window Functions in PostgreSQL (with Practical Examples)](til/2026/01/2026-01-09_postgresql_window_functions.md)
 
-_Last updated: 2026-08-04 09:57 UTC_
+_Last updated: 2026-08-04 13:53 UTC_
 <!-- END:INDEX -->
 
 ## About me
