@@ -537,7 +537,7 @@ This project explores the design of an end-to-end MLOps workflow, covering model
 - 2026-01-23 — [TIL: Making {renv} Work in a Multi-Stage Docker Build (Builder → Runtime)](til/2026/01/2026-01-23_using_renv_in_multi-stage_docker.md)
 - 2026-01-19 — [TIL: Shrinking Docker Images with Multi-Stage Builds (Builder + Runtime)](til/2026/01/2026-01-19_splitting_up_docker_image.md)
 
-_Last updated: 2026-08-30 12:54 UTC_
+_Last updated: 2026-08-31 15:06 UTC_
 <!-- END:INDEX -->
 
 ## About me
