@@ -503,6 +503,7 @@ This project explores the design of an end-to-end MLOps workflow, covering model
 
 <!-- START:INDEX -->
 ## Case studies
+- 2026-07-22 — [Case Study: Bayesian Modelling of Stockouts and Sellout](notes/case-studies/2026-07-22_bayesian_modelling_of_stockouts_and_sellouts.md)
 - 2026-06-25 — [Case Study: From Data Pipelines to Production GIS Products](notes/case-studies/2026-06-25_from_data_pipelines_to_production_gis_products.md)
 - 2026-05-14 — [Case Study: Building a Production Geospatial ML Pipeline for Fiber Connectivity Classification](notes/case-studies/2026-05-14_production_system.md)
 - 2026-03-18 — [📊 Case Study: Serving ML in Production — From Model Selection to Reliable Inference](notes/case-studies/2026-03-18_from_model_selection_to_production.md)
@@ -537,7 +538,7 @@ This project explores the design of an end-to-end MLOps workflow, covering model
 - 2026-01-23 — [TIL: Making {renv} Work in a Multi-Stage Docker Build (Builder → Runtime)](til/2026/01/2026-01-23_using_renv_in_multi-stage_docker.md)
 - 2026-01-19 — [TIL: Shrinking Docker Images with Multi-Stage Builds (Builder + Runtime)](til/2026/01/2026-01-19_splitting_up_docker_image.md)
 
-_Last updated: 2026-10-02 13:52 UTC_
+_Last updated: 2026-10-02 19:58 UTC_
 <!-- END:INDEX -->
 
 ## About me
