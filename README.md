@@ -503,6 +503,7 @@ This project explores the design of an end-to-end MLOps workflow, covering model
 
 <!-- START:INDEX -->
 ## Case studies
+- 2026-09-30 — [Case Study: Building a Multi-Pillar Field Telemetry Compliance & Anomaly Scoring System with Snowpark](notes/case-studies/2026-09-30_case_study_field_telemetry_compliance_scoring.md)
 - 2026-07-22 — [Case Study: Bayesian Modelling of Stockouts and Sellout](notes/case-studies/2026-07-22_bayesian_modelling_of_stockouts_and_sellouts.md)
 - 2026-06-25 — [Case Study: From Data Pipelines to Production GIS Products](notes/case-studies/2026-06-25_from_data_pipelines_to_production_gis_products.md)
 - 2026-05-14 — [Case Study: Building a Production Geospatial ML Pipeline for Fiber Connectivity Classification](notes/case-studies/2026-05-14_production_system.md)
@@ -517,6 +518,9 @@ This project explores the design of an end-to-end MLOps workflow, covering model
 - 2025-08-14 — [Modularizing a Large Shiny App (R)](notes/case-studies/2025-08-14-modularizing-large-shiny-app.md)
 
 ## TIL: Latest Lessons
+- 2026-10-30 — [TIL: Better GPS Coordinates Don't Automatically Mean Better Distance Estimates](til/2026/10/2026-10-30-gps-coordinates.md)
+- 2026-10-15 — [TIL: Why Fixed Thresholds Fail at Detecting Unusually Fast Survey Completion](til/2026/10/2026-10-15-anomaly-fixed-thresholds.md)
+- 2026-09-15 — [TIL: Optimizing Large-Scale Behavioral Metric Pipeline Calculations in Snowflake using Snowpark](til/2026/09/2026-09-15_til_snowpark_metric_pipelines.md)
 - 2026-07-22 — [TIL: Posterior Predictive Checks and Diagnostics with `arviz`](til/2026/07/2026-07-22_posterior_predictive_checks_with_arviz.md)
 - 2026-07-20 — [TIL: Bayesian Mixed-Effects Regression with `bambi`](til/2026/07/2026-07-20_bayesian_regression_with_bambi.md)
 - 2026-06-15 — [TIL: Orchestrating Production Data Pipelines with Kubernetes CronJobs (Without Airflow)](til/2026/06/2026-06-15_cronjob_orchestration_k8s.md)
@@ -534,11 +538,8 @@ This project explores the design of an end-to-end MLOps workflow, covering model
 - 2026-02-24 — [TIL: Scaling OSM-Based Weak Label Generation for Semantic Segmentation](til/2026/02/2026-02-24_scaling_osm_based_weak_label.md)
 - 2026-02-20 — [TIL: Speeding Up a Plumber API by Switching from JSON to Parquet](til/2026/02/2026-02-20_speeding_up_api.md)
 - 2026-02-05 — [TIL: Where to Run Data Operations (PostgreSQL vs R engines like DuckDB/Polars)](til/2026/02/2026-02-05_operations_where_to_do.md)
-- 2026-01-25 — [TIL: Migrating to Docker Buildx with Registry Cache (and Why It’s Worth Showing)](til/2026/01/2026-01-25_using_buildx_docker.md)
-- 2026-01-23 — [TIL: Making {renv} Work in a Multi-Stage Docker Build (Builder → Runtime)](til/2026/01/2026-01-23_using_renv_in_multi-stage_docker.md)
-- 2026-01-19 — [TIL: Shrinking Docker Images with Multi-Stage Builds (Builder + Runtime)](til/2026/01/2026-01-19_splitting_up_docker_image.md)
 
-_Last updated: 2026-10-30 14:09 UTC_
+_Last updated: 2026-10-30 21:27 UTC_
 <!-- END:INDEX -->
 
 ## About me
