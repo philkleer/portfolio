@@ -539,7 +539,7 @@ This project explores the design of an end-to-end MLOps workflow, covering model
 - 2026-02-20 — [TIL: Speeding Up a Plumber API by Switching from JSON to Parquet](til/2026/02/2026-02-20_speeding_up_api.md)
 - 2026-02-05 — [TIL: Where to Run Data Operations (PostgreSQL vs R engines like DuckDB/Polars)](til/2026/02/2026-02-05_operations_where_to_do.md)
 
-_Last updated: 2026-10-30 21:27 UTC_
+_Last updated: 2026-10-31 13:39 UTC_
 <!-- END:INDEX -->
 
 ## About me
